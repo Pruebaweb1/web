@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/style.css">    
+        
+
+</head>
+<body>
+     <!-- nawbar-->
+     <br><br> <br> <nav class="navbar navbar-expand-lg dark"> <!-- Cambiada la clase bg-body-tertiary por bg-dark -->
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a> <!-- Agregada la clase text-light -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="page2.html">Registrarse</a> <!-- Agregada la clase text-light -->
+                    </li>
+                    <!-- Agregamos el botón "Modelos" -->
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Modelos</a> <!-- Agregada la clase text-light -->
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <button class="btn btn-outline-primary" id="carritoBtn" data-bs-toggle="modal" data-bs-target="#carritoModal">Carrito</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    
+
+    </div>
+    </div>
+ 
+
+            <!-- PRODUCTOS-->
+            <br> <br>  <br>    <div class="container container"></div>
+            <section id="Galeria" class="text-center">
+                <h2 class="my-4 text-center">Todos los modelos</h2>
+                <div class="row gx-4">
+                                <!-- PRODUCTOS 0-->
+                    <div class="col-md-6 mb-4">                     
+                            <div class="card" style="width:400px" data-id="3">            <!-- ajustar el tamaño de la card-->
+                            <img class="card-img-top" src="sources/lambo.jpg" height="300" width="190" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Lamborghini Huracan 2020</h4>
+                                <p1 class="card-text">Aceleración de 0 a 100 km/h (62 mph) en 2,9 segundos y una velocidad máxima de 325 km/h 
+                                <p1 class="p3 card-text">  Stock: 2 </p1>
+                              <br><b><p3 class="card-text">Precio: US$ 386.000</p3> </b>
+                                <br><button class="btn btn-primary" onclick="openModal()">Reclamos</button>
+                                <button class="agregar">Agregar al carrito</button> 
+                            </div>
+                        </div>
+                    </div>
+                  <!-- PRODUCTOS 1-->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="sources/mclaren720.jpg" height="300" width="190" alt="Card image">
+                            <div class="card-body">
+                                <div>
+                                    <h4 class="card-title">mclaren 720</h4>
+                                     <p1 class="card-text">Su motor V8 biturbo de 4,0 litros ofrece 720 PS y 740 PS. De 0 a 96 km/h en solo 2,8 segundos</p1>
+                                    <br> </b> <p1 class="p3 card-text">Stock: 3</p1></b>
+                                    <br><b> <p1 class="card-text">Precio: US$400.000</p1></b>
+                                    <br> <button class="btn btn-primary" onclick="openModal()">Reclamos</button>
+                                    <button class="agregar">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <!-- PRODUCTOS 2-->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="sources/bugatti.jpg" height="300" width="190" alt="Card image">
+                            <div class="card-body">
+                                <div>
+                                    <h4 class="card-title">Bugatti Divo 2020</h4>
+                                    <p1 class="card-text">se caracteriza por ser el vehículo más rápido del mundo,sobrepasa los 490km/h 
+                                       <br> <p1 class="p3 card-text"> Stock: 4</p1>
+                                    <br><b> <p1 class="card-text">Precio: US$5.900.900</p1></b>
+                                    <br>  <button class="btn btn-primary" onclick="openModal()">Reclamos</button>
+                                    <button class="agregar">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <!-- PRODUCTOS 3-->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="sources/toyota.jpg" height="300" width="190" alt="Card image">
+                            <div class="card-body">
+                                <div>
+                                    <h4 class="card-title">Toyota Yaris 2017</h4>
+                                    <p1 class="card-text">Motor de 1.5L de inyección directa te da mucho rendimiento y eficiencia
+                                   <br> <p1 class="p3 card-text">Stock: 12</p1>
+                                    <br><b> <p1 class="card-text">Precio: US$15.998</p1></b>
+                                    <br>  <button class="btn btn-primary" onclick="openModal()">Reclamos</button>
+                                    <button class="agregar">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                            <!-- PRODUCTOS 4-->
+                <div class="row text-center">
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="sources/jac.jpg" height="300" width="190" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">JAC E40x</h4>
+                                <p1 class="card-text">camioneta eléctrica compacta y moderna que combina estilo, rendimiento y sostenibilidad
+                                    <br><p1 class="p3 card-text">Stock: 7
+                                    </p1>
+                                <br><b> <p1 class="card-text">Precio: US$12.000</p1></b>
+                                <br>  <button class="btn btn-primary" onclick="openModal()">Reclamos</button>
+                                <button class="agregar">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                                <!-- PRODUCTOS 5 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="sources/Nissan.jpg" height="300" width="190" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Nissan Sentra SR US-spec 2024</h4>
+                                <p1 class="card-text">Esta nueva generación del Sentra deja atrás al correcto naftero para pasar a un 2.0, de 4 cilindros 
+                                  <br>  <p1 class="p3 card-text">Stock: 15
+                                    </p1>
+                                <br> <b><p1 class="card-text">Precio: US$27.200</p1></b>
+                                <br>  <button class="btn btn-primary" onclick="openModal()">Reclamos</button>
+                                <button class="agregar">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                                <!-- PRODUCTOS 6-->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="width:400px" >
+                            <img class="card-img-top" src="sources/toyota corolla.jpg" height="300" width="190" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Toyota Corolla Sedán 1970 </h4>
+                                <p1 class="card-text">motor gasolina de 1.8 litros que desarrolla una potencia máxima de 122 CV
+                                 <br>   <p1 class="p3 card-text">Stock: 20</p1>
+                                <br><b> <p1 class="card-text">Precio: US$22.765</p1></b>
+                                <br>  <button class="btn btn-primary" onclick="openModal()">Reclamos</button>
+                                <button class="agregar">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                                <!-- PRODUCTOS 7-->
+                    <div class="col-md-6 mb-4">
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="sources/toyota camioneta.jpg" height="300" width="190" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Toyota Corolla Cross  2024 </h4>
+                                <p1 class="card-text">Te gusta la comodidad y la vez la potencia, llevate esta toyota y cumpliras tu sueño
+                                 <br>   <p1 class="p3 card-text">Stock: 30</p1>
+                                <br> <b><p1 class="card-text">Precio: US$19.821</p1></b>
+                                <br>  <button class="btn btn-primary" onclick="openModal()">Reclamos</button>
+                                <button class="agregar">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal y card -->
+    <div id="myModal" class="modal">
+        <!-- Agregar el contenedor de Bootstrap -->
+        <div class="container">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Reclamos</h2>
+                <p>
+                    <form>
+                        <label for="rut">RUT:</label><br>
+                        <input type="text" id="rut" name="rut"><br>
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre"><br>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="tel" id="telefono" name="telefono"><br>
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input type="email" id="correo" name="correo"><br>
+                        <label for="correo">Contenido del mensaje</label><br>
+                        <input type="email" id="correo" name="correo"><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card2">
+    <h2 class="parrafo text-white">contacto</h2> <!-- Agregada la clase text-white -->
+    <p class="important_font text-white">CORREO: contact@gmail.com</p> <!-- Agregada la clase text-white -->
+    <p class="important_font text-white">TELEFONO: +56-948090582 </p> <!-- Agregada la clase text-white -->
+    <p class="important_font text-white">DIRECCION: Rinconada,Maipu #142 </p> <!-- Agregada la clase text-white -->
+</div>
+
+
+
+
+
+
+
+    <!-- script para agregar items al carrito-->
+
+
+<script>
+    // Inicializar el carrito como un array vacío
+    var carrito = [];
+
+    // Agregar controladores de eventos a los botones "Agregar al carrito"
+
+    var botones = document.querySelectorAll('.agregar');
+    botones.forEach(function(boton) {
+        boton.addEventListener('click', function(event) {
+            // Obtener el ID del producto desde el atributo "data-id" de la tarjeta
+            var idProducto = event.target.parentElement.getAttribute('data-id');
+            
+            // Agregar el producto al carrito
+            carrito.push(idProducto);
+            
+            // Actualizar la interfaz del carrito
+            var listaCarrito = document.getElementById('carrito');
+            var elementoLista = document.createElement('li');
+            elementoLista.textContent = 'Producto ' + idProducto;
+            listaCarrito.appendChild(elementoLista);
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+    // Función para abrir el modal
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    // Función para cerrar el modal
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

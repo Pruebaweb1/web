@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/style.css">    
+        
+</head>
+<body>
+    
+        <!-- navbar -->
+    
+     <br>   <nav class="navbar navbar-expand-lg dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="index.html"><span class="nav-text">Inicio</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="page2.html"><span class="nav-text">Registrarse</span></a>
+                        </li>
+                        <!-- Agregamos el botón "Modelos" -->
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="page3.html"><span class="nav-text">Modelos</span></a>
+                        </li>
+                    </ul>
+                    <div class="ms-auto"> <!-- Agregada la clase ms-auto para posicionar a la derecha -->
+                        <a class="navbar-brand" href="#">
+                            <img src="sources/logo3.jpg" alt="Logo" width="200" height="200"> <!-- Inserta aquí la ruta de la imagen -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="carritoModalLabel">Carrito de compras</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul id="carritoModalContent"></ul>
+                                    
+                                    <ul id="carrito"></ul>
+    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </nav>
+
+
+        
+
+        <div class="container-fluid">
+             <br> <br> <br> <br> <br> <br>  <img src="sources/bienvenido1.png" alt="Descripción de la imagen">
+            <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <h1 class=" title text-white">Ultimas unidades</h1> 
+        </div>
+        
+
+    </div>
+    </div>
+    <!-- carrusel -->
+
+   <br><br> <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img title="test_bg" alt="Imagen 1" src="sources/mclaren caru.png" class="d-block w-100 img-fluid">
+           
+                <div class="carousel-caption">
+                    <h5>Mclaren 720</h5>
+                    <p>Precio: US$400.000</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img title="test_bg" alt="Imagen 2" src="sources/bugatti caru.png" class="d-block w-100 img-fluid"
+                    alt="Imagen 2">
+                    <div class="carousel-caption">
+                        <h5>Bugatti Divo 2020</h5>
+                        <p>Precio: US$5.900.900</p>
+                    </div> 
+           
+                </div>
+            <div class="carousel-item">
+                <img title="test_bg" alt="Imagen 3" src="sources/lambo caru.png" class="d-block w-100 img-fluid"
+                    alt="Imagen 3">
+
+                    <div class="carousel-caption">
+                        <h5>Lamborghini Huracan 2020</h5>
+                        <p>Precio: US$ 386.000</p>
+                    </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal y card -->
+    <div id="myModal" class="modal">
+        <!-- Agregar el contenedor de Bootstrap -->
+        <div class="container">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Reclamos</h2>
+                <p>
+                    <form>
+                        <label for="rut">RUT:</label><br>
+                        <input type="text" id="rut" name="rut"><br>
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre"><br>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="tel" id="telefono" name="telefono"><br>
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input type="email" id="correo" name="correo"><br>
+                        <label for="correo">Contenido del mensaje</label><br>
+                        <input type="email" id="correo" name="correo"><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br> <br> <br>   <br> <div class="card2">
+        <h2 class="parrafo text-white">contacto</h2> <!-- Agregada la clase text-white -->
+        <p class="important_font text-white">CORREO: matoncar@gmail.com</p> <!-- Agregada la clase text-white -->
+        <p class="important_font text-white">TELEFONO: +56-948090582 </p> <!-- Agregada la clase text-white -->
+        <p class="important_font text-white">DIRECCION: Rinconada,Maipu #142 </p> <!-- Agregada la clase text-white -->
+    </div>
+    
+
+
+
+
+
+    <!-- script para agregar items al carrito-->
+
+
+<script>
+    // Inicializar el carrito como un array vacío
+    var carrito = [];
+
+    // Agregar controladores de eventos a los botones "Agregar al carrito"
+
+    var botones = document.querySelectorAll('.agregar');
+    botones.forEach(function(boton) {
+        boton.addEventListener('click', function(event) {
+            // Obtener el ID del producto desde el atributo "data-id" de la tarjeta
+            var idProducto = event.target.parentElement.getAttribute('data-id');
+            
+            // Agregar el producto al carrito
+            carrito.push(idProducto);
+            
+            // Actualizar la interfaz del carrito
+            var listaCarrito = document.getElementById('carrito');
+            var elementoLista = document.createElement('li');
+            elementoLista.textContent = 'Producto ' + idProducto;
+            listaCarrito.appendChild(elementoLista);
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+    // Función para abrir el modal
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    // Función para cerrar el modal
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
